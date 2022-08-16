@@ -53,6 +53,9 @@ const httpTrigger: AzureFunction = async (
 
 	context.res = {
 		// status: 200, /* Defaults to 200 */
+		headers: {
+			"Access-Control-Allow-Origin": "*",
+		},
 		// body: ,
 	};
 };
